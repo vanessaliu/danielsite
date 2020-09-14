@@ -5,15 +5,9 @@
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- Compiled and minified CSS -->
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    
-    <!-- Font Awesome Icon - CSS-->
-    <link
-      rel="stylesheet"
-      href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css">
+    <script src="https://use.fontawesome.com/880bcb069c.js"></script>
     <title>Daniel Rhodin</title>
   </head>
   <body>
@@ -21,7 +15,7 @@
     <!-- <link rel="stylesheet" href="css/style.css" /> -->
     <link rel="stylesheet" href="css/custom.css"/>
 <!-- Navigation Menu-->
-  <div class="hide-on-small-only">
+  <div class="hide-on-med-and-down">
     <ul id="nav-mobile" class="sidenav sidenav-fixed" style="transform: translateX(0px);">
       <li>
           <div class="user-view">
@@ -102,44 +96,97 @@
       </li>
     </ul>
   </div>
-  <nav class="hide-on-large only">
-    <ul id="slide-out" class="side-nav" style="width: 190px; left: 0px;">
-      <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i class="mdi-social-person small"></i><span>About</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Experience section" href="#experience" class="waves-effect waves-dark cyan-text"><i class="mdi-action-trending-up small"></i><span>Experience</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark indigo-text"><i class="mdi-av-web small"></i><span>Projects</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark purple-text"><i class="mdi-av-equalizer small"></i><span>Skills</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Awards section" href="#awards" class="waves-effect waves-dark red-text"><i class="mdi-action-grade small"></i><span>Awards</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark orange-text"><i class="mdi-social-school small"></i><span>Education</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark brown-text"><i class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Contact section" href="#blog" class="waves-effect waves-dark yellow-text text-dark-3"><i class="mdi-content-mail small"></i><span>Blog</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Open Andrew's Resume in a new tab" href="https://docs.google.com/document/d/1evlvmAcOmPTttl1isyX_UcQbLO5pK8OwB4Rs2Sv4riY" target="_blank" class="waves-effect waves-dark grey-text text-darken-3"><i class="mdi-action-description small"></i><span>Resume</span></a>
-      </li>
-    </ul>
+  <nav class="tablet-mobile-nav hide-on-large-only">
+    <a
+      aria-label="Toggle visibility of the mobile navbar"
+      href="#"
+      data-activates="slide-out"
+      class="button-collapse"
+      ><i class="mdi-navigation-menu"></i
+    ></a>
+    <div class="info">
+      <a id="name" aria-label="Navigate to the beginning of the page" href="#intro" class="teal-text">Daniel Rhodin</a>
+    </div>
   </nav>
-  <nav>
-    <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-  </nav>
+  <ul id="slide-out" class="side-nav">
+    <li class="bold">
+      <a
+        aria-label="Navigate to the About section"
+        href="#about"
+        class="waves-effect waves-dark teal-text"
+        ><i class="mdi-social-person small"></i><span>About</span></a
+      >
+    </li>
+    <li class="bold">
+      <a
+        aria-label="Navigate to the Experience section"
+        href="#experience"
+        class="waves-effect waves-dark cyan-text"
+        ><i class="mdi-action-trending-up small"></i
+        ><span>Experience</span></a
+      >
+    </li>
+    <li class="bold">
+      <a
+        aria-label="Navigate to the Projects section"
+        href="#projects"
+        class="waves-effect waves-dark indigo-text"
+        ><i class="mdi-av-web small"></i><span>Projects</span></a
+      >
+    </li>
+    <li class="bold">
+      <a
+        aria-label="Navigate to the Skills section"
+        href="#skills"
+        class="waves-effect waves-dark purple-text"
+        ><i class="mdi-av-equalizer small"></i><span>Skills</span></a
+      >
+    </li>
+    <li class="bold">
+      <a
+        aria-label="Navigate to the Awards section"
+        href="#awards"
+        class="waves-effect waves-dark red-text"
+        ><i class="mdi-action-grade small"></i><span>Awards</span></a
+      >
+    </li>
+    <li class="bold">
+      <a
+        aria-label="Navigate to the Education section"
+        href="#education"
+        class="waves-effect waves-dark orange-text"
+        ><i class="mdi-social-school small"></i><span>Education</span></a
+      >
+    </li>
+    <li class="bold">
+      <a
+        aria-label="Navigate to the Contact section"
+        href="#contact"
+        class="waves-effect waves-dark brown-text"
+        ><i class="mdi-content-mail small"></i><span>Contact</span></a
+      >
+    </li>
+    <li class="bold">
+      <a
+        aria-label="Navigate to the Contact section"
+        href="#blog"
+        class="waves-effect waves-dark yellow-text text-dark-3"
+        ><i class="mdi-content-mail small"></i><span>Blog</span></a
+      >
+    </li>
+    <li class="bold">
+      <a
+        aria-label="Open Andrew's Resume in a new tab"
+        href="https://docs.google.com/document/d/1evlvmAcOmPTttl1isyX_UcQbLO5pK8OwB4Rs2Sv4riY"
+        target="_blank"
+        class="waves-effect waves-dark grey-text text-darken-3"
+        ><i class="mdi-action-description small"></i><span>Resume</span></a
+      >
+    </li>
+  </ul>
 <!-- Main Content-->
 <main>
-  <section id="intro" class="section scrollspy full-height">
-    <div class="overlay"></div>
+  <section id="intro" class="section scrollspy">
     <div class="container">
       <h2>
         I want to <span class="teal">make things</span><br />that
@@ -1945,17 +1992,16 @@
     </div>
   </section>
 </main>
-    <!-- jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <!-- Materialize - Compiled and minified JavaScript-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+
     <script>
       // Materialize - Initializers
       $(document).ready(function () {
         $(".scrollspy").scrollSpy();
         // Initialize collapse button
         $(".button-collapse").sideNav({
-          menuWidth: 190, // Default is 240
+          menuWidth: 220, // Default is 240
           edge: "left", // Choose the horizontal origin
           closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
         });
