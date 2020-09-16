@@ -1,6 +1,7 @@
 $teal: #009688;
 .tablet-mobile-nav {
 	display: flex;
+	align-items: center;
 	background-color: white;
 	position: fixed;
 	z-index: 1;
@@ -15,7 +16,7 @@ $teal: #009688;
 		}
 	}
 	.info {
-		width: 80%;
+		width: 85%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -24,6 +25,13 @@ $teal: #009688;
 			height: 100%;
 			font-size: 22px;
     		display: block;
+		}
+	}
+	.language {
+		width: 5%;
+		img {
+			width: 30px;
+			height: 30px;
 		}
 	}
 }
