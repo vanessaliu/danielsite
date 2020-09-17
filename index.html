@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"><script src="https://use.fontawesome.com/880bcb069c.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>Daniel Rhodin</title>
   </head>
   <body>
@@ -20,13 +20,19 @@
       <li>
           <div class="user-view">
             <div class="background">
-              <img src="images/office.png">
+              <img src="images/office-1.jpeg">
             </div>
-            <a href="#user"><img class="circle" src="images/daniel.jpeg"></a>
-            <a href="#name"><span class="white-text name">Daniel Rhodin</span></a>
-            <a href="#email"><span class="white-text email">daniel@rhodin.net</span></a>
-            <div class="language">
-              <a href="index-se.html"><img class="circle" src="images/sweden_flag.png"></a>
+            <div class="info">
+              <a href="#intro"><img class="circle" src="images/daniel.jpeg"></a>
+              <div>
+                <div class="user-info">
+                  <a href="#intro"><span class="white-text name">Daniel Rhodin</span></a>
+                  <a href="#intro"><span class="white-text email">daniel@rhodin.net</span></a>
+                </div>
+                <div class="language-flag">
+                  <a href="index-se.html"><img class="circle" src="images/sweden_flag.png"></a>
+                </div>
+              </div>
             </div>
         </div>
       </li>
@@ -100,13 +106,7 @@
     </ul>
   </div>
   <nav class="tablet-mobile-nav hide-on-large-only">
-    <a
-      aria-label="Toggle visibility of the mobile navbar"
-      href="#"
-      data-activates="slide-out"
-      class="button-collapse"
-      ><i class="mdi-navigation-menu"></i
-    ></a>
+    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
     <div class="info">
       <a id="name" aria-label="Navigate to the beginning of the page" href="#intro" class="teal-text">Daniel Rhodin</a>
     </div>
@@ -114,7 +114,7 @@
       <a href="index-se.html"><img class="circle" src="images/sweden_flag.png"></a>
     </div>
   </nav>
-  <ul id="slide-out" class="side-nav">
+  <ul id="slide-out" class="sidenav">
     <li class="bold">
       <a
         aria-label="Navigate to the About section"
@@ -192,12 +192,91 @@
   </ul>
 <!-- Main Content-->
 <main>
-  <section id="intro" class="section scrollspy">
+  <section id="intro" class="section scrollspy hide-on-med-and-down">
     <div class="container">
       <h2>
         I want to <span class="teal">make things</span><br />that
         <span class="underline">make a difference</span>.
       </h2>
+      <div class="row">
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/sample-1.jpg">
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <button class="btn open-carousel">Show what I can do</button>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/sample-1.jpg">
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/sample-1.jpg">
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="c-container chen-hide">
+        <div class="carousel carousel-slider center">
+          <div class="carousel-item red white-text" href="#one!">
+            <h2>First Panel</h2>
+            <div class="white-text">
+              <img src="https://lorempixel.com/1000/250/nature/1">
+              <p class="white-text">This is your first panel</p>
+            </div>
+          </div>
+          <div class="carousel-item amber white-text" href="#two!">
+            <h2>Second Panel</h2>
+            <div class="white-text">
+              <img src="https://lorempixel.com/1000/250/nature/2">
+              <p class="white-text">This is your 2nd panel</p>
+            </div>
+          </div>
+          <div class="carousel-item green white-text" href="#three!">
+            <h2>Third Panel</h2>
+            <div class="white-text">
+              <img src="https://lorempixel.com/1000/250/nature/3">
+              <p class="white-text">This is your 3rd panel</p>
+            </div>
+          </div>
+          <div class="carousel-item blue white-text" href="#four!">
+            <h2>Fourth Panel</h2>
+            <div class="white-text">
+              <img src="https://lorempixel.com/1000/250/nature/4">
+              <p class="white-text">This is your 4th panel</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <section id="about" class="section scrollspy">
@@ -1946,7 +2025,7 @@
     <h3 class="page-title white-text teal">Contact</h3>
     <div class="container">
       <div class="row">
-        <form class="col s12">
+        <form class="col s12" name="danielSiteContactForm" method="POST" data-netlify="true">
           <div class="row">
             <div class="input-field col s6">
               <input id="first_name" type="text" class="validate">
@@ -1969,7 +2048,7 @@
               <label for="textarea1">Message</label>
             </div>
           </div>
-          <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+          <button class="btn waves-effect waves-light" type="submit">Submit
             <i class="fa fa-paper-plane" aria-hidden="true"></i>
           </button>
         </form>
@@ -1978,18 +2057,24 @@
   </section>
 </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <script>
       // Materialize - Initializers
       $(document).ready(function () {
         $(".scrollspy").scrollSpy();
-        // Initialize collapse button
-        $(".button-collapse").sideNav({
-          menuWidth: 220, // Default is 240
-          edge: "left", // Choose the horizontal origin
-          closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+        $('.modal').modal();
+        $('.sidenav').sidenav();
+        $('.carousel.carousel-slider').carousel({
+          fullWidth: true,
+          indicators: true
+        });        
+
+        $( ".open-carousel" ).click(function() {
+          $( ".c-container" ).removeClass( "chen-hide" );
         });
+        
       });
     </script>
   </body>

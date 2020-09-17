@@ -18,15 +18,21 @@
   <div class="hide-on-med-and-down">
     <ul id="nav-mobile" class="sidenav sidenav-fixed" style="transform: translateX(0px);">
       <li>
-          <div class="user-view">
+        <div class="user-view">
             <div class="background">
-              <img src="images/office.png">
+              <img src="images/office-1.jpeg">
             </div>
-            <a href="#user"><img class="circle" src="images/daniel.jpeg"></a>
-            <a href="#name"><span class="white-text name">Daniel Rhodin</span></a>
-            <a href="#email"><span class="white-text email">daniel@rhodin.net</span></a>
-            <div class="language">
-              <a href="index.html"><img class="circle" src="images/english_flag.png"></a>
+            <div class="info">
+              <a href="#user"><img class="circle" src="images/daniel.jpeg"></a>
+              <div>
+                <div class="user-info">
+                  <a href="#name"><span class="white-text name">Daniel Rhodin</span></a>
+                  <a href="#email"><span class="white-text email">daniel@rhodin.net</span></a>
+                </div>
+                <div class="language-flag">
+                  <a href="index.html"><img class="circle" src="images/english_flag.png"></a>
+                </div>
+              </div>
             </div>
         </div>
       </li>
@@ -1946,7 +1952,7 @@
     <h3 class="page-title white-text teal">Contact</h3>
     <div class="container">
       <div class="row">
-        <form class="col s12">
+        <form class="col s12" name="danielSiteContactForm" method="POST" data-netlify="true">
           <div class="row">
             <div class="input-field col s6">
               <input id="first_name" type="text" class="validate">
@@ -1969,7 +1975,7 @@
               <label for="textarea1">Message</label>
             </div>
           </div>
-          <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+          <button class="btn waves-effect waves-light" type="submit">Submit
             <i class="fa fa-paper-plane" aria-hidden="true"></i>
           </button>
         </form>
