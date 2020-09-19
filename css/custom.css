@@ -1,6 +1,9 @@
 .chen-hide {
   opacity: 0; }
 
+.sidenav.sidenav-mobile {
+  width: 200px; }
+
 .user-view .info {
   display: flex;
   flex-direction: column; }
@@ -27,13 +30,16 @@
   background-color: white;
   position: fixed;
   z-index: 1; }
+  .tablet-mobile-nav .sidenav-trigger {
+    margin: 0; }
   .tablet-mobile-nav a {
     width: 10%;
     display: flex;
     justify-content: center;
     align-items: center; }
     .tablet-mobile-nav a i {
-      color: black; }
+      color: #009688;
+      font-size: 40px; }
   .tablet-mobile-nav .info {
     width: 80%;
     display: flex;
@@ -74,7 +80,9 @@ main {
   padding-left: 300px; }
   @media only screen and (max-width: 992px) {
     main {
-      padding-left: 0; } }
+      padding-left: 0; }
+      main #about {
+        padding-top: 65px; } }
   main h3 {
     font-weight: 200;
     margin-bottom: 60px;
@@ -96,8 +104,6 @@ main {
     padding-top: 125px; }
     main #intro h2 {
       color: white; }
-  main #about {
-    padding-top: 65px; }
   main #contact a:not(.btn-floating) {
     bottom: 6px;
     left: 20px;
@@ -105,3 +111,9 @@ main {
 
 .carousel {
   height: 430px !important; }
+
+.btn-large {
+  display: flex;
+  align-items: center; }
+  .btn-large i {
+    margin-left: 5px; }

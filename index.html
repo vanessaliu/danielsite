@@ -4,16 +4,17 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- Compiled and minified CSS -->
+    <link rel="icon" type="image/png" href="images/sweden_flag.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css"> -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/> -->
+    <link rel="stylesheet" href="css/custom.css"/>
     <title>Daniel Rhodin</title>
   </head>
   <body>
-    <!-- Custom Styles-->
-    <!-- <link rel="stylesheet" href="css/style.css" /> -->
-    <link rel="stylesheet" href="css/custom.css"/>
 <!-- Navigation Menu-->
   <div class="hide-on-med-and-down">
     <ul id="nav-mobile" class="sidenav sidenav-fixed" style="transform: translateX(0px);">
@@ -42,7 +43,7 @@
           aria-label="Navigate to the About section"
           href="#about"
           class="waves-effect waves-dark teal-text"
-          ><i class="mdi-social-person small"></i><span>About</span></a
+          ><i class="material-icons small">person</i><span>About</span></a
         >
       </li>
       <li class="bold">
@@ -50,8 +51,7 @@
           aria-label="Navigate to the Experience section"
           href="#experience"
           class="waves-effect waves-dark cyan-text"
-          ><i class="mdi-action-trending-up small"></i
-          ><span>Experience</span></a
+          ><i class="material-icons small">trending_up</i><span>Experience</span></a
         >
       </li>
       <li class="bold">
@@ -59,7 +59,7 @@
           aria-label="Navigate to the Projects section"
           href="#projects"
           class="waves-effect waves-dark indigo-text"
-          ><i class="mdi-av-web small"></i><span>Projects</span></a
+          ><i class="material-icons small">web</i><span>Projects</span></a
         >
       </li>
       <li class="bold">
@@ -67,7 +67,7 @@
           aria-label="Navigate to the Skills section"
           href="#skills"
           class="waves-effect waves-dark purple-text"
-          ><i class="mdi-av-equalizer small"></i><span>Skills</span></a
+          ><i class="material-icons small">pie_chart</i><span>Skills</span></a
         >
       </li>
       <li class="bold">
@@ -75,7 +75,7 @@
           aria-label="Navigate to the Awards section"
           href="#awards"
           class="waves-effect waves-dark red-text"
-          ><i class="mdi-action-grade small"></i><span>Awards</span></a
+          ><i class="material-icons small">grade</i><span>Awards</span></a
         >
       </li>
       <li class="bold">
@@ -83,7 +83,7 @@
           aria-label="Navigate to the Education section"
           href="#education"
           class="waves-effect waves-dark orange-text"
-          ><i class="mdi-social-school small"></i><span>Education</span></a
+          ><i class="material-icons small">school</i><span>Education</span></a
         >
       </li>
       <li class="bold">
@@ -91,7 +91,7 @@
           aria-label="Navigate to the Contact section"
           href="#contact"
           class="waves-effect waves-dark brown-text"
-          ><i class="mdi-content-mail small"></i><span>Contact</span></a
+          ><i class="material-icons small">contact_mail</i><span>Contact</span></a
         >
       </li>
       <li class="bold">
@@ -100,13 +100,13 @@
           href="https://docs.google.com/document/d/1evlvmAcOmPTttl1isyX_UcQbLO5pK8OwB4Rs2Sv4riY"
           target="_blank"
           class="waves-effect waves-dark grey-text text-darken-3"
-          ><i class="mdi-action-description small"></i><span>Resume</span></a
+          ><i class="material-icons small">description</i><span>Resume</span></a
         >
       </li>
     </ul>
   </div>
   <nav class="tablet-mobile-nav hide-on-large-only">
-    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
+    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     <div class="info">
       <a id="name" aria-label="Navigate to the beginning of the page" href="#intro" class="teal-text">Daniel Rhodin</a>
     </div>
@@ -114,84 +114,113 @@
       <a href="index-se.html"><img class="circle" src="images/sweden_flag.png"></a>
     </div>
   </nav>
-  <ul id="slide-out" class="sidenav">
+  <ul id="slide-out" class="sidenav sidenav-mobile">
     <li class="bold">
-      <a
-        aria-label="Navigate to the About section"
-        href="#about"
-        class="waves-effect waves-dark teal-text"
-        ><i class="mdi-social-person small"></i><span>About</span></a
-      >
-    </li>
-    <li class="bold">
-      <a
-        aria-label="Navigate to the Experience section"
-        href="#experience"
-        class="waves-effect waves-dark cyan-text"
-        ><i class="mdi-action-trending-up small"></i
-        ><span>Experience</span></a
-      >
-    </li>
-    <li class="bold">
-      <a
-        aria-label="Navigate to the Projects section"
-        href="#projects"
-        class="waves-effect waves-dark indigo-text"
-        ><i class="mdi-av-web small"></i><span>Projects</span></a
-      >
-    </li>
-    <li class="bold">
-      <a
-        aria-label="Navigate to the Skills section"
-        href="#skills"
-        class="waves-effect waves-dark purple-text"
-        ><i class="mdi-av-equalizer small"></i><span>Skills</span></a
-      >
-    </li>
-    <li class="bold">
-      <a
-        aria-label="Navigate to the Awards section"
-        href="#awards"
-        class="waves-effect waves-dark red-text"
-        ><i class="mdi-action-grade small"></i><span>Awards</span></a
-      >
-    </li>
-    <li class="bold">
-      <a
-        aria-label="Navigate to the Education section"
-        href="#education"
-        class="waves-effect waves-dark orange-text"
-        ><i class="mdi-social-school small"></i><span>Education</span></a
-      >
-    </li>
-    <li class="bold">
-      <a
-        aria-label="Navigate to the Contact section"
-        href="#contact"
-        class="waves-effect waves-dark brown-text"
-        ><i class="mdi-content-mail small"></i><span>Contact</span></a
-      >
-    </li>
-    <li class="bold">
-      <a
-        aria-label="Navigate to the Contact section"
-        href="#blog"
-        class="waves-effect waves-dark yellow-text text-dark-3"
-        ><i class="mdi-content-mail small"></i><span>Blog</span></a
-      >
-    </li>
-    <li class="bold">
-      <a
-        aria-label="Open Andrew's Resume in a new tab"
-        href="https://docs.google.com/document/d/1evlvmAcOmPTttl1isyX_UcQbLO5pK8OwB4Rs2Sv4riY"
-        target="_blank"
-        class="waves-effect waves-dark grey-text text-darken-3"
-        ><i class="mdi-action-description small"></i><span>Resume</span></a
-      >
-    </li>
+        <a
+          aria-label="Navigate to the About section"
+          href="#about"
+          class="waves-effect waves-dark teal-text"
+          ><i class="material-icons small">person</i><span>About</span></a
+        >
+      </li>
+      <li class="bold">
+        <a
+          aria-label="Navigate to the Experience section"
+          href="#experience"
+          class="waves-effect waves-dark cyan-text"
+          ><i class="material-icons small">trending_up</i><span>Experience</span></a
+        >
+      </li>
+      <li class="bold">
+        <a
+          aria-label="Navigate to the Projects section"
+          href="#projects"
+          class="waves-effect waves-dark indigo-text"
+          ><i class="material-icons small">web</i><span>Projects</span></a
+        >
+      </li>
+      <li class="bold">
+        <a
+          aria-label="Navigate to the Skills section"
+          href="#skills"
+          class="waves-effect waves-dark purple-text"
+          ><i class="material-icons small">pie_chart</i><span>Skills</span></a
+        >
+      </li>
+      <li class="bold">
+        <a
+          aria-label="Navigate to the Awards section"
+          href="#awards"
+          class="waves-effect waves-dark red-text"
+          ><i class="material-icons small">grade</i><span>Awards</span></a
+        >
+      </li>
+      <li class="bold">
+        <a
+          aria-label="Navigate to the Education section"
+          href="#education"
+          class="waves-effect waves-dark orange-text"
+          ><i class="material-icons small">school</i><span>Education</span></a
+        >
+      </li>
+      <li class="bold">
+        <a
+          aria-label="Navigate to the Contact section"
+          href="#contact"
+          class="waves-effect waves-dark brown-text"
+          ><i class="material-icons small">contact_mail</i><span>Contact</span></a
+        >
+      </li>
+      <li class="bold">
+        <a
+          aria-label="Open Andrew's resume in a new tab"
+          href="https://docs.google.com/document/d/1evlvmAcOmPTttl1isyX_UcQbLO5pK8OwB4Rs2Sv4riY"
+          target="_blank"
+          class="waves-effect waves-dark grey-text text-darken-3"
+          ><i class="material-icons small">description</i><span>Resume</span></a
+        >
+      </li>
   </ul>
 <!-- Main Content-->
 <main>
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <div class="intro-slide">
+        <div class="card">
+          <div class="card-image">
+            <img src="images/sample-1.jpg">
+            <span class="card-title">Card Title</span>
+          </div>
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <img src="images/sample-1.jpg">
+            <span class="card-title">Card Title</span>
+          </div>
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <img src="images/sample-1.jpg">
+            <span class="card-title">Card Title</span>
+          </div>
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <section id="intro" class="section scrollspy hide-on-med-and-down">
     <div class="container">
       <h2>
@@ -225,7 +254,7 @@
               I am convenient because I require little markup to use effectively.</p>
             </div>
             <div class="card-action">
-              <a href="#">This is a link</a>
+              <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
             </div>
           </div>
         </div>
@@ -2048,8 +2077,8 @@
               <label for="textarea1">Message</label>
             </div>
           </div>
-          <button class="btn waves-effect waves-light" type="submit">Submit
-            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+          <button class="btn btn-large waves-effect" type="submit">Submit
+            <i class="small material-icons">send</i>          
           </button>
         </form>
       </div>
@@ -2059,6 +2088,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
 
     <script>
       // Materialize - Initializers
@@ -2074,6 +2105,8 @@
         $( ".open-carousel" ).click(function() {
           $( ".c-container" ).removeClass( "chen-hide" );
         });
+
+        $('.intro-slide').slick();
         
       });
     </script>

@@ -2,7 +2,11 @@ $teal: #009688;
 .chen-hide {
 	opacity: 0;
 }
-
+.sidenav {
+	&.sidenav-mobile {
+		width: 200px;
+	}
+}
 .user-view .info {
 	display: flex;
 	flex-direction: column;
@@ -39,14 +43,17 @@ $teal: #009688;
 	background-color: white;
 	position: fixed;
 	z-index: 1;
-
+	.sidenav-trigger {
+		margin: 0;
+	}
 	a {
 		width: 10%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		i {
-			color: black;
+			color: $teal;
+			font-size: 40px;
 		}
 	}
 	.info {
@@ -96,6 +103,9 @@ main {
 	padding-left: 300px;
 	@media only screen and (max-width: 992px) {
 		padding-left: 0;
+		#about {
+			padding-top: 65px;
+		}
 	}
 	h3 {
 		font-weight: 200;
@@ -123,9 +133,7 @@ main {
 			color: white;
 		}
 	}
-	#about {
-		padding-top: 65px;
-	}
+	
 	#contact a:not(.btn-floating) {
 	  bottom: 6px;
 	  left: 20px;
@@ -134,4 +142,11 @@ main {
 }
 .carousel {
 	height: 430px !important;
+}
+.btn-large {
+	display: flex;
+	align-items: center;
+	i {
+		margin-left: 5px;
+	}
 }
